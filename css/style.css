@@ -1,0 +1,284 @@
+*{padding: 0; margin:0; box-sizing: border-box; list-style: none; text-decoration: none; font-family: sans-serif;}
+
+
+/****************** NAVBAR START *******************/
+nav{
+	background: #fff;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 100px;
+	position: fixed;
+	top:0;
+}
+
+nav .logo img{
+	height: 50px;
+	cursor: pointer;
+}
+
+nav .menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 30px;
+	margin-top: 15px;
+	padding: 10px 20px;
+	border-radius: 20px;
+	background: rgba(255,255,255,0.4);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+nav .menu li a{
+	color: #000; 
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+nav .menu li a:hover{
+	color: #75096d;
+}
+
+nav .contact-box{
+	display: flex;
+	column-gap: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+nav .contact-box img{
+	height: 25px;
+	cursor: pointer;
+}
+
+nav .contact-box button{
+	border:1px solid #000;
+	padding: 10px 30px;
+	outline: none;
+	border-radius: 20px;
+	background: #fff;
+}
+
+nav .contact-box button img{
+	height: 15px;
+	margin-left: 5px;
+}
+
+nav .toggle-icon{
+	cursor: pointer;
+	display: none;
+}
+
+nav .toggle-icon img{
+    height: 30px;
+}
+
+/********** MOBILE MENU ********/
+nav .mobile{
+	display: none;
+	position: relative;
+}
+
+/********** MOBILE MENU ********/
+
+/****************** NAVBAR MEDIA QUERY ************/
+
+@media only screen and (max-width: 1100px){
+	nav{
+		padding: 0px 60px;
+	}
+
+	nav .contact-box button{
+		display: none;
+	}
+
+	
+}
+
+@media only screen and (max-width: 992px){
+	nav{
+		padding: 0px 40px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	nav{
+		padding: 0px 30px;
+	}
+
+	nav .menu{
+		display: none;
+	}
+
+	nav .toggle-icon{
+		display: block;
+	}
+
+/********** MOBILE MENU ********/
+   nav .mobile{
+		display: block;
+		position: absolute;
+		top: 0;
+		right: -500px;
+		background: #f3e3e6;
+		width: 50%;
+		height: 100vh;
+		transition: all 0.5s ease-in-out; 
+   }
+
+   nav .mobile.active{
+   	    right: 0;
+   }
+
+   nav .mobile img{
+	   position: absolute;
+	   right:50px;
+	   top: 30px;
+	   cursor: pointer;
+	   height: 30px;
+  }
+
+   nav .mobile-menu{
+       padding: 100px 0px;
+   }
+
+
+   nav .mobile-menu li{
+	   padding: 20px 30px;
+   }
+
+   nav .mobile-menu li a{
+       color: #000;
+	   text-decoration: none;
+	   padding: 10px 20px;
+   }
+}
+
+@media only screen and (max-width: 425px){
+	nav .mobile{
+		width: 70%;
+	}
+}
+
+
+/****************** NAVBAR END *******************/
+
+/****************** PROFILE SECTION *******************/
+.profile{
+	//height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.profile .profile-content{
+	width: 55%;
+	margin-top: 100px;
+}
+
+.profile .profile-content .profile-image img{
+	height: 120px;
+	margin-bottom: 20px;
+}
+
+.profile .profile-content h4{
+	margin-bottom: 20px;
+}
+
+.profile .profile-content h1{
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+.profile .profile-content p{
+	font-size: 18px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.profile .profile-content .profile-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+
+.profile .profile-content .profile-btn a:first-child{
+   background: linear-gradient(to right ,#75096d,#d1123d,#dd5526);
+   padding:15px 30px;
+   text-decoration: none;
+   color: #fff;
+   border-radius: 25px;
+}
+
+.profile .profile-content .profile-btn a img{
+	height: 18px;
+	margin-left: 5px;
+}
+
+.profile .profile-content .profile-btn a:last-child{
+   background: #fff;
+   padding:15px 30px;
+   text-decoration: none;
+   color: #000;
+   border:1px solid #000;
+   border-radius: 25px;
+}
+
+
+@media only screen and (max-width: 1100px){
+.profile .profile-content{
+	width: 60%;
+	margin-top: 100px;
+}
+
+.profile .profile-content h1{
+	font-size:30px;
+}
+
+
+.profile .profile-content .profile-btn a:first-child ,.profile .profile-content .profile-btn a:first-child{
+   padding:15px 30px;
+   border-radius: 25px;
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 576px){
+.profile .profile-content{
+	width: 80%;
+	margin-top: 100px;
+}
+
+.profile .profile-content h1{
+	font-size:30px;
+}
+
+.profile .profile-content .profile-btn{
+	flex-direction: column;
+	row-gap:30px;
+}
+
+.profile .profile-content .profile-btn a:first-child ,.profile .profile-content .profile-btn a:first-child{
+   padding:15px 30px;
+   border-radius: 25px;
+}
+
+
+}
+
+
+
+/****************** PROFILE SECTION *******************/
