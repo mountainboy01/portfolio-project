@@ -447,6 +447,15 @@ nav .mobile{
 	height: 100px
 }
 
+.about .about-text .about-tools .about-icon{
+   column-gap: 10px;
+ }
+
+ .about .about-text .about-tools .about-icon .icon{
+   height: 50px;
+   width: 50px;
+ }
+
  }
 
 
