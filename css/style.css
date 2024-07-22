@@ -709,6 +709,7 @@ nav .mobile{
    border:1px solid grey;
    padding: 15px 40px;
    border-radius: 30px;
+   //background: transparent;
    background: #fff;
    color: #000;
 }
@@ -943,5 +944,6 @@ nav .mobile{
 }
 
 .lime{
-	background:  #11001f;
+	background:!important#11001f;
+	color: #fff;
 }

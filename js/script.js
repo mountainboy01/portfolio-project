@@ -23,7 +23,11 @@ const body = document.querySelector("#body");
 const logo = document.querySelector("#logo");
 const footerLogo = document.querySelector("#footer-logo");
 const emailIcon = document.querySelector("#email-icon");
-
+const code =document.querySelector("#code");
+const edu =document.querySelector("#edu");
+const project =document.querySelector("#project");
+const submit = document.querySelector("#submit");
+const show = document.querySelector("show-more");
 
 moon.addEventListener("click",()=>{
 	document.body.classList.toggle("dark-theme");
@@ -32,6 +36,13 @@ moon.addEventListener("click",()=>{
 		logo.src="images/logo_dark.png";
 		footerLogo.src="images/logo_dark.png";
 		emailIcon.src="images/mail_icon_dark.png";
+		hamburger.src="images/menu-white.png";
+		closeIcon.src="images/close-white.png";
+		code.src="images/code-icon-dark.png";
+		edu.src="images/edu-icon-dark.png";
+		project.src="images/project-icon-dark.png";
+		mobile.style.background="#11001f";
+		submit.classList.add("lime");
 	}
 
 	else{
@@ -39,6 +50,14 @@ moon.addEventListener("click",()=>{
 		logo.src="images/logo.png";
 		footerLogo.src="images/logo.png";
 		emailIcon.src="images/mail_icon.png";
+		hamburger.src="images/menu-black.png";
+		closeIcon.src="images/close-black.png";
+		code.src="images/code-icon.png";
+		edu.src="images/edu-icon.png";
+		project.src="images/project-icon.png";
+		mobile.style.background="#f3e3e6";
+		submit.style.background="#000";
+		submit.classList.remove("lime");
 	}
 });
 
