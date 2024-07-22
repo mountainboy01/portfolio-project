@@ -1,12 +1,17 @@
 *{padding: 0; margin:0; box-sizing: border-box; list-style: none; text-decoration: none; font-family: sans-serif;}
 
+:root{
+	--primary-color:#fff;
+	--secondary-color:#000;
+}
+
 html{
 	scroll-behavior: smooth;
 }
 
 /****************** NAVBAR START *******************/
 nav{
-	background: rgba(255,255,255,0.8);
+	//background: rgba(255,255,255,0.8);
 	backdrop-filter:blur(10px);
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 	height: 80px;
@@ -33,12 +38,12 @@ nav .menu{
 	margin-top: 15px;
 	padding: 10px 20px;
 	border-radius: 20px;
-	background: rgba(255,255,255,0.4);
+	//background: rgba(255,255,255,0.4);
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
 nav .menu li a{
-	color: #000; 
+	color: var(--secondary-color); 
 	font-size: 16px;
 	font-weight: 500;
 	text-decoration: none;
@@ -62,7 +67,7 @@ nav .contact-box img{
 }
 
 nav .contact-box button{
-	border:1px solid #000;
+	border:1px solid var(--secondary-color);
 	padding: 10px 30px;
 	outline: none;
 	border-radius: 20px;
@@ -158,7 +163,7 @@ nav .mobile{
    }
 
    nav .mobile-menu li a{
-       color: #000;
+       color: var(--secondary-color);
 	   text-decoration: none;
 	   padding: 10px 20px;
    }
@@ -191,7 +196,7 @@ nav .mobile{
 
 /****************** PROFILE SECTION *******************/
 .profile{
-	//height: 100vh;
+	background: var(--primary-color);
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -212,17 +217,20 @@ nav .mobile{
 
 .profile .profile-content h4{
 	margin-bottom: 20px;
+	color: var(--secondary-color);
 }
 
 .profile .profile-content h1{
 	font-size: 60px;
 	margin-bottom: 20px;
+	color: var(--secondary-color);
 }
 
 .profile .profile-content p{
 	font-size: 18px;
 	margin-bottom: 30px;
 	text-align: center;
+	color: var(--secondary-color);
 }
 
 .profile .profile-content .profile-btn{
@@ -307,6 +315,7 @@ nav .mobile{
 /****************** ABOUT SECTION *******************/
 .about{
 	padding: 80px 100px;
+	background: var(--primary-color);
 }
 
 .about .about-title{
@@ -315,10 +324,12 @@ nav .mobile{
 
 .about .about-title h4{
 	margin-bottom: 20px;
+	color: var(--secondary-color);
 }
 
  .about .about-title h1{
  	margin-bottom: 60px;
+ 	color: var(--secondary-color);
  }
 
   .about .about-img {
@@ -378,6 +389,7 @@ nav .mobile{
    line-height: 30px;
    margin-bottom: 40px;
    text-align: justify;
+   color: var(--secondary-color);
  }
 
 .about .about-text .about-details{
@@ -391,7 +403,7 @@ nav .mobile{
 
  .about .about-text .about-details:hover{
  	transform: translateY(-5px);
- 	box-shadow: 4px 4px 1px rgba(0,0,0,1);
+ 	box-shadow: 4px 4px 1px var(--secondary-color);
  }
 
  .about .about-text .about-details img{
@@ -403,6 +415,7 @@ nav .mobile{
  	height: 30px;
  	font-size: 16px;
  	line-height: 20px;
+ 	color: var(--secondary-color);
  }
 
  .about .about-text .about-tools .about-icon{
@@ -482,6 +495,7 @@ nav .mobile{
 /****************** SERVICES SECTION *******************/
 .services{
 	padding: 80px 100px;
+	background: var(--primary-color);
 }
 
 .services .services-title{
@@ -490,22 +504,25 @@ nav .mobile{
 
 .services .services-title h4{
 	margin-bottom: 20px;
+	color: var(--secondary-color);
 }
 
 .services .services-title h1{
  	margin-bottom: 40px;
+ 	color: var(--secondary-color);
  }
 
  .services .services-title p{
  	font-size: 18px;
  	margin-bottom: 60px;
  	padding: 0px 200px;
+ 	color: var(--secondary-color);
  }
 
  .services .services-item{
  	border:1px solid grey;
  	border-radius: 10px;
- 	background: #fff;
+ 	background: var(--primary-color);
  	padding: 30px 30px;
  	transition: all 0.5s ease;
  	cursor: pointer;
@@ -520,6 +537,7 @@ nav .mobile{
  .services .services-item h5{
  	font-size: 16px;
  	margin-bottom: 20px;
+ 	color: var(--secondary-color);
  }
 
  .services .services-item .services-link{
@@ -529,13 +547,13 @@ nav .mobile{
 
  .services .services-item:hover{
  	transform: translateY(-5px);
- 	box-shadow: 4px 4px 1px rgba(0,0,0,1);
- 	background: #f3e3e6;
+ 	box-shadow: 4px 4px 1px var(--secondary-color);
+ 	//background: #f3e3e6;
  }
 
  .services .services-item .services-link a{
  	text-decoration: none;
- 	color: #000;
+ 	color: var(--secondary-color);
  	font-weight: 600;
  	font-size: 14px;
  }
@@ -582,6 +600,7 @@ nav .mobile{
 /****************** PORTFOLIO SECTION *******************/
 .portfolio{
 	padding: 80px 100px;
+	background: var(--primary-color);
 }
 
 .portfolio .portfolio-title{
@@ -590,16 +609,19 @@ nav .mobile{
 
 .portfolio .portfolio-title h4{
 	margin-bottom: 20px;
+	color: var(--secondary-color);
 }
 
 .portfolio .portfolio-title h1{
  	margin-bottom: 40px;
+ 	color: var(--secondary-color);
 }
 
 .portfolio .portfolio-title p{
  	font-size: 18px;
  	margin-bottom: 60px;
  	padding: 0px 200px;
+ 	color: var(--secondary-color);
 }
 
 .portfolio .portfolio-item{
@@ -644,10 +666,12 @@ nav .mobile{
 .portfolio .portfolio-item .portfolio-content h5{
 	font-size: 16px;
 	font-weight: 600;
+	color: #000;
 }
 
 .portfolio .portfolio-item .portfolio-content h6{
 	font-size: 14px;
+	color: #000;
 }
 
 .portfolio .portfolio-item .portfolio-content .portfolio-icon{
@@ -737,6 +761,7 @@ nav .mobile{
 /****************** CONTACT SECTION *******************/
 .contact{
 	padding: 80px 100px;
+	background: var(--primary-color);
 }
 
 .contact .contact-title{
@@ -745,16 +770,19 @@ nav .mobile{
 
 .contact .contact-title h4{
 	margin-bottom: 20px;
+	color: var(--secondary-color);
 }
 
 .contact .contact-title h1{
  	margin-bottom: 40px;
+ 	color: var(--secondary-color);
 }
 
 .contact .contact-title p{
  	font-size: 18px;
  	margin-bottom: 60px;
  	padding: 0px 200px;
+ 	color: var(--secondary-color);
 }
 
 .contact .contact-form {
@@ -771,6 +799,7 @@ nav .mobile{
 	outline: none;
 	box-shadow: none;
 	padding: 25px 20px;
+	background: var(--primary-color);
 }
 
 .contact .contact-form .form-group textarea{
@@ -830,6 +859,7 @@ nav .mobile{
 .footer{
 	padding: 40px 100px 20px 100px;
 	text-align: center;
+	background: var(--primary-color);
 }
 
 .footer .footer-logo img{
@@ -842,6 +872,10 @@ nav .mobile{
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 40px;
+}
+
+.footer .footer-email h6{
+	color: var(--secondary-color);
 }
 
 .footer .footer-email img{
@@ -861,13 +895,17 @@ nav .mobile{
 	flex-wrap: wrap;
 }
 
+.footer .copy-right p{
+	color:var(--secondary-color);
+}
+
 .footer .copy-right .footer-links{
 	display: flex;
 	column-gap: 20px;
 }
 
 .footer .copy-right .footer-links a{
-   color: #000;
+   color: var(--secondary-color);
    text-decoration: none;
 }
 
@@ -898,3 +936,12 @@ nav .mobile{
 
 /****************** FOOTER SECTION *******************/
 
+/****************** DARK THEME *******************/
+.dark-theme{
+	--primary-color: #11001f;
+	--secondary-color:#fff;
+}
+
+.lime{
+	background:  #11001f;
+}
