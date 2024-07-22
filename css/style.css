@@ -80,7 +80,7 @@ nav .toggle-icon{
 }
 
 nav .toggle-icon img{
-    height: 30px;
+    height: 20px;
 }
 
 /********** MOBILE MENU ********/
@@ -145,7 +145,7 @@ nav .mobile{
 	   right:50px;
 	   top: 30px;
 	   cursor: pointer;
-	   height: 30px;
+	   height: 20px;
   }
 
    nav .mobile-menu{
@@ -165,6 +165,10 @@ nav .mobile{
 }
 
 @media only screen and (max-width: 425px){
+	nav .logo img{
+	height: 30px;
+	}
+	
 	nav .mobile{
 		width: 70%;
 	}
@@ -573,5 +577,9 @@ nav .mobile{
 
 
 
+<<<<<<< HEAD
 
 /****************** SERVICES SECTION *******************/
+=======
+/****************** ABOUT SECTION *******************/
+>>>>>>> 816bf8cbab778b7568ce9535c522eee8791e1eaf
