@@ -6,7 +6,8 @@ html{
 
 /****************** NAVBAR START *******************/
 nav{
-	background: #fff;
+	background: rgba(255,255,255,0.8);
+	backdrop-filter:blur(10px);
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 	height: 80px;
 	width: 100%;
@@ -167,6 +168,18 @@ nav .mobile{
 	nav .mobile{
 		width: 70%;
 	}
+
+	nav .logo img{
+	height: 30px;
+    }
+
+    nav .toggle-icon img{
+    height: 20px;
+    }
+
+    nav .mobile img{
+    	height: 20px;
+    }
 }
 
 
@@ -360,7 +373,7 @@ nav .mobile{
    font-size: 18px;
    line-height: 30px;
    margin-bottom: 40px;
-   text-align: left;
+   text-align: justify;
  }
 
 .about .about-text .about-details{
@@ -458,9 +471,107 @@ nav .mobile{
 
  }
 
-
-
-
-
-
 /****************** ABOUT SECTION *******************/
+
+
+
+/****************** SERVICES SECTION *******************/
+.services{
+	padding: 80px 100px;
+}
+
+.services .services-title{
+	text-align: center;
+}
+
+.services .services-title h4{
+	margin-bottom: 20px;
+}
+
+.services .services-title h1{
+ 	margin-bottom: 40px;
+ }
+
+ .services .services-title p{
+ 	font-size: 18px;
+ 	margin-bottom: 60px;
+ 	padding: 0px 200px;
+ }
+
+ .services .services-item{
+ 	border:1px solid grey;
+ 	border-radius: 10px;
+ 	background: #fff;
+ 	padding: 30px 30px;
+ 	transition: all 0.5s ease;
+ 	cursor: pointer;
+ 	margin-bottom: 30px;
+ }
+
+ .services .services-item img{
+ 	height: 40px;
+ 	margin-bottom: 20px;
+ }
+
+ .services .services-item h5{
+ 	font-size: 16px;
+ 	margin-bottom: 20px;
+ }
+
+ .services .services-item .services-link{
+ 	display: flex;
+ 	align-items: center;
+ }
+
+ .services .services-item:hover{
+ 	transform: translateY(-5px);
+ 	box-shadow: 4px 4px 1px rgba(0,0,0,1);
+ }
+
+ .services .services-item .services-link a{
+ 	text-decoration: none;
+ 	color: #000;
+ 	font-weight: 600;
+ 	font-size: 14px;
+ }
+
+ .services .services-item .services-link img{
+ 	height: 10px;
+ 	margin-left: 5px;
+ 	margin-top: 15px;
+ }
+
+
+
+ /****************** SERVICES MEDIA QUERY*******************/
+
+@media only screen and (max-width: 1100px){
+ .services{
+    padding: 80px 40px;
+ }
+
+ .services .services-title p{
+ 	padding: 0px 100px;
+ }
+}
+
+@media only screen and (max-width: 768px){
+
+ .services .services-title p{
+ 	padding: 0px 50px;
+ }
+}
+
+@media only screen and (max-width: 576px){
+
+ .services .services-title p{
+ 	padding: 0px;
+ }
+}
+
+
+
+
+
+
+/****************** SERVICES SECTION *******************/

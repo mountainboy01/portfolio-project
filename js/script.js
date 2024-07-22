@@ -12,3 +12,14 @@ hamburger.addEventListener("click",()=>{
 closeIcon.addEventListener("click",()=>{
       mobile.classList.remove("active");
 });
+
+
+/************** NAVBAR ***********/
+
+
+/************** LIGHT/DARK THEME ***********/
+
+
+
+
+/************** LIGHT/DARK THEME ***********/
