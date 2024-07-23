@@ -50,6 +50,9 @@ moon.addEventListener("click",()=>{
 		mobile.style.background="#11001f";
 		submit.style.background="#11001f";
 		submit.style.border="1px solid #fff";
+		serviceIcon.forEach((icon)=>{
+			icon.src="images/right-arrow-white.png";
+		});
 	}
 
 	else{
@@ -67,7 +70,9 @@ moon.addEventListener("click",()=>{
 		mobile.style.background="#f3e3e6";
 		submit.style.background="#000";
 		submit.style.border="none";
-		serviceIcon.src="images/right-arrow-bold.png";
+		serviceIcon.forEach((icon)=>{
+			icon.src="images/right-arrow-bold.png";
+		});
 	}
 });
 
