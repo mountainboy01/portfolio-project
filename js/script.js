@@ -31,7 +31,6 @@ const showIcon = document.querySelector("#show-more");
 const submit = document.querySelector("#submit");
 const show = document.querySelector("#how-more");
 const serviceIcon =document.querySelectorAll(".service-icon");
-
 console.log(serviceIcon);
 
 moon.addEventListener("click",()=>{
@@ -51,7 +50,6 @@ moon.addEventListener("click",()=>{
 		mobile.style.background="#11001f";
 		submit.style.background="#11001f";
 		submit.style.border="1px solid #fff";
-		serviceIcon.src="images/right-arrow-white.png";
 	}
 
 	else{
