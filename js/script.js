@@ -19,6 +19,7 @@ closeIcon.addEventListener("click",()=>{
 
 /************** LIGHT/DARK THEME ***********/
 const moon = document.querySelector("#moon");
+const contactIcon =document.querySelector("#contact-icon");
 const body = document.querySelector("#body");
 const logo = document.querySelector("#logo");
 const footerLogo = document.querySelector("#footer-logo");
@@ -26,13 +27,18 @@ const emailIcon = document.querySelector("#email-icon");
 const code =document.querySelector("#code");
 const edu =document.querySelector("#edu");
 const project =document.querySelector("#project");
+const showIcon = document.querySelector("#show-more");
 const submit = document.querySelector("#submit");
-const show = document.querySelector("show-more");
+const show = document.querySelector("#how-more");
+const serviceIcon =document.querySelectorAll(".service-icon");
+
+console.log(serviceIcon);
 
 moon.addEventListener("click",()=>{
 	document.body.classList.toggle("dark-theme");
 	if(document.body.classList.contains("dark-theme")){
 		moon.src="images/sun_icon.png";
+		contactIcon.src="images/arrow-icon-dark.png";
 		logo.src="images/logo_dark.png";
 		footerLogo.src="images/logo_dark.png";
 		emailIcon.src="images/mail_icon_dark.png";
@@ -41,12 +47,16 @@ moon.addEventListener("click",()=>{
 		code.src="images/code-icon-dark.png";
 		edu.src="images/edu-icon-dark.png";
 		project.src="images/project-icon-dark.png";
+		showIcon.src="images/right-arrow-white.png";
 		mobile.style.background="#11001f";
-		submit.classList.add("lime");
+		submit.style.background="#11001f";
+		submit.style.border="1px solid #fff";
+		serviceIcon.src="images/right-arrow-white.png";
 	}
 
 	else{
 		moon.src="images/moon_icon.png";
+		contactIcon.src="images/arrow-icon.png";
 		logo.src="images/logo.png";
 		footerLogo.src="images/logo.png";
 		emailIcon.src="images/mail_icon.png";
@@ -55,9 +65,11 @@ moon.addEventListener("click",()=>{
 		code.src="images/code-icon.png";
 		edu.src="images/edu-icon.png";
 		project.src="images/project-icon.png";
+		showIcon.src="images/right-arrow-bold.png";
 		mobile.style.background="#f3e3e6";
 		submit.style.background="#000";
-		submit.classList.remove("lime");
+		submit.style.border="none";
+		serviceIcon.src="images/right-arrow-bold.png";
 	}
 });
 

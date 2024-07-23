@@ -3,6 +3,7 @@
 :root{
 	--primary-color:#fff;
 	--secondary-color:#000;
+	--hover-color:rgb(243, 227, 230);
 }
 
 html{
@@ -12,7 +13,7 @@ html{
 /****************** NAVBAR START *******************/
 nav{
 	//background: rgba(255,255,255,0.8);
-	backdrop-filter:blur(10px);
+	background: var(--primary-color);
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 	height: 80px;
 	width: 100%;
@@ -68,10 +69,12 @@ nav .contact-box img{
 
 nav .contact-box button{
 	border:1px solid var(--secondary-color);
+	background: var(--primary-color);
+	background: transparent;
+	color: var(--secondary-color);
 	padding: 10px 30px;
 	outline: none;
 	border-radius: 20px;
-	background: #fff;
 }
 
 nav .contact-box button img{
@@ -423,6 +426,10 @@ nav .mobile{
    column-gap: 20px;
  }
 
+ .about .about-text .about-tools h6{
+ 	color: var(--secondary-color);
+ }
+
  .about .about-text .about-tools .about-icon .icon{
    height: 50px;
    width: 50px;
@@ -548,7 +555,7 @@ nav .mobile{
  .services .services-item:hover{
  	transform: translateY(-5px);
  	box-shadow: 4px 4px 1px var(--secondary-color);
- 	//background: #f3e3e6;
+ 	background: var(--hover-color);
  }
 
  .services .services-item .services-link a{
@@ -709,9 +716,8 @@ nav .mobile{
    border:1px solid grey;
    padding: 15px 40px;
    border-radius: 30px;
-   //background: transparent;
-   background: #fff;
-   color: #000;
+   background: var(--primary-color);
+   color: var(--secondary-color);
 }
 
 .portfolio .show-more button img{
@@ -801,6 +807,11 @@ nav .mobile{
 	box-shadow: none;
 	padding: 25px 20px;
 	background: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+.contact .contact-form .form-control::placeholder{
+	color: var(--secondary-color);
 }
 
 .contact .contact-form .form-group textarea{
@@ -814,9 +825,12 @@ nav .mobile{
 .contact .contact-form button{
 	padding: 15px 30px;
 	border:none;
+	outline: none;
 	border-radius: 25px;
 	color: #fff;
 	background: #000;
+	//color: var(--primary-color);
+	//background: var(--secondary-color);
 }
 
 .contact .contact-form button img{
@@ -941,9 +955,10 @@ nav .mobile{
 .dark-theme{
 	--primary-color: #11001f;
 	--secondary-color:#fff;
+	--hover-color:rgb(56, 11, 94);
 }
 
 .lime{
-	background:!important#11001f;
+	background:#11001f;
 	color: #fff;
 }
